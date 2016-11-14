@@ -22,6 +22,28 @@
   <%= @post.user.name %>
 </p>
 <p>
+  <strong>Likes:</strong>
+  <%= @post.get_upvotes.size %>
+</p>
+<p>
+  <strong>Dislikes:</strong>
+  <%= @post.get_downvotes.size %>
+</p>
+
+<p>
+  <%= link_to "Like", like_post_path(@post), method: :get %>
+</p>
+
+<p>
+  <%= link_to "Dislike", dislike_post_path(@post), method: :get %>
+</p>
+
+
+
+
+
+
+<p>
   <%= comment_count = pluralize(@post.comments.count, "Comment") %>
 </p>
   <% @comments.each do |comment| %>
