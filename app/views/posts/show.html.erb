@@ -1,17 +1,14 @@
-<h1>Post Show</h1>
+<h1><%= @post.title %></h1>
+
 
 <p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
-
-<p>
-  <strong>Link:</strong>
-  <%= @post.link %>
+  <!-- <strong>Link:</strong> -->
+  <%= link_to image_tag(@post.link, class: 'postImage'), @post.link, :target => "_blank"  %>
 </p>
 
 <p>
   <strong>Description:</strong>
+</br>
   <%= @post.description %>
 </p>
 
@@ -22,17 +19,14 @@
 <p>
   <strong>Likes:</strong>
   <%= @post.get_upvotes.size %>
-</p>
-<p>
+-
   <strong>Dislikes:</strong>
   <%= @post.get_downvotes.size %>
 </p>
 
 <p>
   <%= link_to "Like", like_post_path(@post), method: :get %>
-</p>
-
-<p>
+-
   <%= link_to "Dislike", dislike_post_path(@post), method: :get %>
 </p>
 
