@@ -12,7 +12,7 @@
     <header>
       <div class="wrapper clearfix">
         <%= link_to 'Patch', root_path, id: "logo" %>
-        <% if @current_user %>
+        <% if user_signed_in? %>
           <%= link_to 'New Post', new_post_path, class: "button"%>
           <%= link_to 'Account', edit_user_registration_path, class: "button" %>
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete,  class: "button" %>
