@@ -1,5 +1,14 @@
-  <% @posts.each do |post| %>
-      <p><%= link_to post.title, post_path(post) %></p>
-      <p><%= link_to image_tag(post.link, class: 'thumb'), post_path(post) %></p>
-      <p><%= post.get_likes.size %>Likes</p>
-  <% end %>
+<div id="posts">
+    <% @posts.each do |post| %>
+    <div class="posts">
+        <div class="post_image">
+            <%= link_to image_tag(post.link, class: 'thumb'), post_path(post) %>
+        </div>
+        <div class="post_content">
+            <p><%= link_to post.title, post_path(post) %></p>
+            <p><%= post.get_likes.size %>Likes</p>
+        </div>
+    </div>
+    <% end %>
+
+</div>

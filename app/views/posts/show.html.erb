@@ -1,54 +1,52 @@
+<p>
+    <!-- <strong>Link:</strong> -->
+    <%= link_to image_tag(@post.link, class: 'postImage'), @post.link, :target => "_blank"  %>
+</p>
+
 <h1><%= @post.title %></h1>
-
+<%= @post.description %>
 
 <p>
-  <!-- <strong>Link:</strong> -->
-  <%= link_to image_tag(@post.link, class: 'postImage'), @post.link, :target => "_blank"  %>
+    <strong>User:</strong>
+    <%= @post.user.name %>
+</p>
+<p>
+    <strong>Likes:</strong>
+    <%= @post.get_upvotes.size %>
+    -
+    <strong>Dislikes:</strong>
+    <%= @post.get_downvotes.size %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-</br>
-  <%= @post.description %>
+    <%= link_to "Like", like_post_path(@post), method: :get %>
+    -
+    <%= link_to "Dislike", dislike_post_path(@post), method: :get %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @post.user.name %>
+    <%= comment_count = pluralize(@post.comments.count, "Comment") %>
 </p>
-<p>
-  <strong>Likes:</strong>
-  <%= @post.get_upvotes.size %>
--
-  <strong>Dislikes:</strong>
-  <%= @post.get_downvotes.size %>
-</p>
-
-<p>
-  <%= link_to "Like", like_post_path(@post), method: :get %>
--
-  <%= link_to "Dislike", dislike_post_path(@post), method: :get %>
-</p>
-
-
-
-
-
-
-<p>
-  <%= comment_count = pluralize(@post.comments.count, "Comment") %>
-</p>
-  <% @comments.each do |comment| %>
-  <p><strong><%= username = comment.user.name %>:</strong>
-  <%= content = comment.content %> </p>
-  <% end %>
-<p></p>
-  <%= render 'comments/form' %>
-
-
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Destroy', post_path(@post),
+<% @comments.each do |comment| %>
+<p><%= username = comment.user.name %>:
+<%= content = comment.content %>
+<% if user_signed_in? && current_user.id == comment.user.id %>
+<%= link_to '(Delete)', [comment.post, comment],
               method: :delete,
-              data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Home', root_path %>
+              data: { confirm: 'Are you sure?' } %></p>
+<% else %>
+<% end %>
+<% end %>
+</p>
+
+<p></p>
+<%= render 'comments/form' %>
+
+<% if user_signed_in? && current_user.id == @post.user.id %>
+<%= link_to 'Edit', edit_post_path(@post) %>
+-
+<%= link_to 'Delete', post_path(@post),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+<% else %>
+<% end %>

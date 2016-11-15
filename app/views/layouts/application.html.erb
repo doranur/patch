@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Patch</title>
-    <%= csrf_meta_tags %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <head>
+        <title>Patch</title>
+        <%= csrf_meta_tags %>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-  <body>
-    <header>
-      <div class="wrapper clearfix">
-        <%=link_to image_tag('logo.png', class: "logo"), root_path%>
-        <nav>
-        <% if user_signed_in? %>
-          <%= link_to 'Account', edit_user_registration_path %>
-          <%= link_to 'New Post', new_post_path, class: "button"%>
-          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-        <% else %>
-        <%= link_to 'Sign In', new_user_session_path %>
-        <%= link_to 'Sign Up', new_user_registration_path, class: "button" %>
-        <% end %>
-        </nav>
-      </div>
-    </header>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </body>
+    <body>
+        <header>
+            <div class="wrapper clearfix">
+                <%=link_to image_tag('logo.png', class: "logo"), root_path%>
+                <nav>
+                    <% if user_signed_in? %>
+                    <%= link_to 'Account', edit_user_registration_path %>
+                    <%= link_to 'New Post', new_post_path, class: "button"%>
+                    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+                    <% else %>
+                    <%= link_to 'Sign In', new_user_session_path %>
+                    <%= link_to 'Sign Up', new_user_registration_path, class: "button" %>
+                    <% end %>
+                </nav>
+            </div>
+        </header>
+
+        <div class="yield">
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+            <%= yield %>
+        </div>
+    </body>
 </html>
