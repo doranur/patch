@@ -1,8 +1,8 @@
 
 
 .thumb {
-      width:300px;
-      height: auto;
+      width: auto;
+      height: 200px;
 }
 
 .postImage {
@@ -78,6 +78,7 @@ header {
 		}
 	}
 	nav {
+    display: inline-block;
 		float: right;
     margin-top: 10px;
 		a {
@@ -92,6 +93,9 @@ header {
 	}
 }
 
+.notice, .alert {
+  color: #50A7C7;
+}
 
 
 @import 'home.css.scss';
