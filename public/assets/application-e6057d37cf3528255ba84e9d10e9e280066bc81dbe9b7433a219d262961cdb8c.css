@@ -1,0 +1,280 @@
+/* line 5, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.thumb {
+  width: auto;
+  height: 200px;
+}
+
+/* line 11, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* line 18, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+/* line 23, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* line 27, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 32, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.yield {
+  width: 80%;
+  margin-top: 95px;
+  margin-left: 100px;
+}
+
+/* line 40, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 45, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 49, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.button {
+  border: 1px solid black;
+  padding: .7rem 1.25rem;
+  border-radius: .3rem;
+  outline: none;
+  background: white;
+  color: black;
+}
+
+/* line 58, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.button:hover {
+  background-color: #50A7C7;
+  color: white;
+}
+
+/* line 64, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.horizontal {
+  border-bottom: 1px solid black;
+}
+
+/* line 67, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
+}
+/* line 77, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header #logo {
+  float: left;
+  font-size: 1.75rem;
+}
+/* line 80, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header #logo a {
+  color: black;
+  text-decoration: none;
+}
+/* line 83, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header #logo a:hover {
+  color: #50A7C7;
+}
+/* line 88, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header nav {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+}
+/* line 92, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header nav a {
+  margin-left: 1.5rem;
+  line-height: 2;
+  color: black;
+  text-decoration: none;
+}
+/* line 97, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header nav a:hover {
+  color: #50A7C7;
+}
+
+/* line 104, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.notice, .alert {
+  color: #50A7C7;
+}
+
+/* line 2, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post {
+  background: #F8F9FA;
+  width: 30%;
+  float: left;
+  margin: 1rem 1.5%;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 9, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 12, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image img {
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+/* line 18, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: .5rem 2%;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 24, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 27, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 32, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data {
+  padding: .75rem 5%;
+  color: #969696;
+}
+/* line 35, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username, #posts .post .post_content .data .buttons {
+  margin: 0;
+  font-size: .8rem;
+}
+/* line 39, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username {
+  float: left;
+}
+/* line 42, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons {
+  float: right;
+}
+/* line 44, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons span {
+  margin-left: .5rem;
+}
+
+/* line 1, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show {
+  padding-top: 2rem;
+}
+/* line 4, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_image_description {
+  width: 50%;
+  float: left;
+  margin-right: 5%;
+}
+/* line 10, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data {
+  width: 15%;
+  float: left;
+}
+/* line 14, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .button {
+  width: 100%;
+  display: inline-block;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #969696;
+}
+/* line 23, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .button:hover {
+  color: white;
+  border: 1px solid black;
+}
+/* line 29, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .data {
+  width: 100%;
+  display: block;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  text-decoration: none;
+  color: #969696;
+  margin: 0;
+}
+/* line 40, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show h1 {
+  margin: 0;
+  color: #333233;
+}
+/* line 45, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+/* line 50, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .username {
+  color: #969696;
+  margin: 0 0 1.5rem;
+}
+/* line 55, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .description {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #969696;
+}
+
+/* line 63, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#comments {
+  padding-bottom: 4rem;
+  width: 50%;
+}
+/* line 67, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#comments .comment_count {
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+/* line 73, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#comments .comment {
+  padding: 2rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  padding-left: 5%;
+}
+/* line 78, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#comments .comment .username {
+  font-size: 1.3rem;
+  color: #333233;
+  margin: 0 0 0.5rem;
+}
+/* line 84, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#comments .comment .content {
+  margin: 0;
+  color: #969696;
+}
+/* line 90, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#comments .comment_content {
+  margin-top: 2.5rem;
+}
+/* line 93, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#comments .comment_content textarea {
+  width: 100%;
+  margin: 1rem 0;
+  min-height: 150px;
+  border: 1px solid #E4E4E4;
+  background: #F8F9FA;
+  border-radius: 0.3rem;
+}
