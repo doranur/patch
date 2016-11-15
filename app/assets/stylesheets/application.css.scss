@@ -13,7 +13,7 @@
 
 
 body {
-	font-family: "Proxima Nova";
+  font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 }
 
@@ -52,11 +52,19 @@ h1, h2, h3, h4, h5, h6 {
 	color: black;
 }
 
+.button:hover{
+  background-color: #50A7C7;
+  color: white;
+}
+
 
 .horizontal {
   border-bottom: 1px solid black;
 }
 header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
   position: fixed;
   background-color: white;
   top: 0px;
