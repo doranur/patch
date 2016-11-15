@@ -1,15 +1,15 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
   before_action :authenticate_user!, except: [:index, :show]
+
   def index
     @posts = Post.all.order("created_at DESC")
+    # @random_post = Post.where.not(id: @post).order("RANDOM()").first
   end
 
   def show
     @comments = Comment.where(post_id: @post)
-    @random_post = Post.where.not(id: @post).order("RANDOM()").first
-    @random_post2 = Post.where.not(id: @random_post).order("RANDOM()").first
-    @random_post3 = Post.where.not(id: @random_post2).order("RANDOM()").first
+    # @random_post = Post.where.not(id: @post).order("RANDOM()").first
   end
 
   def new
@@ -56,6 +56,10 @@ class PostsController < ApplicationController
 
   def find_post
     @post = Post.find(params[:id])
+  end
+
+  def random_post
+    @random_post = Post.where.not(id: @post).order("RANDOM()").first
   end
 
   def post_params
