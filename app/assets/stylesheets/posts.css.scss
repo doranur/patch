@@ -3,11 +3,9 @@
 #post_show {
 	margin-top: -20px;
 	height: 100%;
-	// border-left: 1px solid black;
 	width: 100%;
 	padding-top: 2rem;
-	// padding-left: 4rem;
-	// margin-left: 3.3rem;
+
 	.post_image_description {
 		width: 60%;
 		float: left;
@@ -15,20 +13,14 @@
 		font-size: 10px;
 	}
 
-.description {
-	// color: red;
-	// background-color: red;
-}
-
-
 
 	.post_data {
-		// margin-top: -1rem;
 		margin-left: 3rem;
 		width: 25%;
 		float: left;
 
 		.button {
+			margin-top: 20px;
 			width: 100%;
 			display: inline-block;
 			padding: 0.75rem 0;
@@ -44,7 +36,7 @@
 		}
 
 		.data {
-			margin-top: 200px;
+			margin-top: 300px;
 			width: 100%;
 			display: block;
 			padding: 0.75rem 0;
@@ -71,7 +63,7 @@
 	}
 
 	.description {
-		margin: 2rem 0;
+		margin: -.4rem;
 		font-size: 1.1rem;
 		line-height: 1.5;
 		color: #969696;
