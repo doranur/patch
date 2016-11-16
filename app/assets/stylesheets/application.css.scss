@@ -2,22 +2,15 @@
   display: none;
 }
 
-.thumb {
-      width: auto;
-      height: 200px;
-}
-
-
 .logo {
   max-width: 50px;
   max-height: 50px;
-
 }
-
 
 body {
   font-family: 'Raleway', sans-serif;
 	font-weight: 100;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,11 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .yield {
   width: 80%;
-	margin-top: 95px;
-  margin-left: 100px;
+  padding-top: 6rem;
+  margin-left: 7rem;
 }
-
-
 
 .clearfix:before, .clearfix:after {
 	content: " ";
@@ -62,17 +53,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .horizontal {
+  width: 100%;
   border-bottom: 1px solid black;
 }
 header {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("wet_snow");
+
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 16px;
   position: fixed;
-  background-color: white;
   top: 0px;
 	width: 100%;
-	padding: 1rem 0;
+	padding: 0.75rem 0;
 	border-bottom: 1px solid black;
 	#logo {
 		float: left;

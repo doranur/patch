@@ -7,18 +7,20 @@
     <%= @post.user.name %>
     about
     <%= time_ago_in_words(@post.created_at) %>
+    ago
   </p>
   <div class="clearfix">
     <div class="post_image_description">
         <%= image_tag(@post.link, class: 'postImage')  %>
+        </div>
       <div class="description">
-        <%= simple_format(@post.description) %>
+        <%= @post.description %>
       </div>
-    </div>
+
     <div class="post_data">
       <%= link_to "Visit Link", @post.link, target: "_blank", class: "button" %>
       <%= link_to like_post_path(@post), method: :get, class: "data" do %>
-        <i class="fa fa-thumbs-o-up"></i>
+        <span class="fa fa-thumbs-o-up"></span>
         <%= pluralize(@post.get_upvotes.size, "Like") %>
       <% end %>
       <p class="data">
@@ -29,6 +31,7 @@
         <%= link_to "Edit", edit_post_path(@post), class: "data" %>
         <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "data" %>
       <% end %>
+
     </div>
   </div>
 </div>
