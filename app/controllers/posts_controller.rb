@@ -4,16 +4,17 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order("created_at DESC")
-    # @random_post = Post.where.not(id: @post).order("RANDOM()").first
+    @random_post = Post.where.not(id: @post).order("RANDOM()").first
   end
 
   def show
     @comments = Comment.where(post_id: @post)
-    # @random_post = Post.where.not(id: @post).order("RANDOM()").first
+    @random_post = Post.where.not(id: @post).order("RANDOM()").first
   end
 
   def new
     @post = current_user.posts.build
+    @random_post = Post.where.not(id: @post).order("RANDOM()").first
   end
 
   def create
