@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.2'
 gem 'paperclip'
+gem 'cancan', '~> 1.6', '>= 1.6.10'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
