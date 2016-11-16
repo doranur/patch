@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "/pages/:page" => "pages#show",as: "about"
+  get '/about'=>'about#get_about'
   devise_for :users
   resources :posts do
     member do
