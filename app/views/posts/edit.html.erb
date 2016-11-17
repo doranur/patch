@@ -1,4 +1,4 @@
-<h1>Edit Post</h1>
+<h1>Edit Patch</h1>
 
 <%= form_for :post, url: post_path(@post), method: :patch, html: { multipart: true} do |f| %>
 
@@ -22,4 +22,7 @@
   </p>
 <% end %>
 
+<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "data" %>
+</br>
+</br>
 <%= link_to 'Back', posts_path %>

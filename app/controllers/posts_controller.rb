@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @random_post = Post.where.not(id: @post).order("RANDOM()").first
   end
 
   def update

@@ -23,8 +23,8 @@
                     <%= link_to 'About', about_path%>
                     <% if user_signed_in? %>
                     <%= link_to current_user.name, edit_user_registration_path %>
+                    <%= link_to 'Random Patch', post_path(@random_post)%>
                     <%= link_to 'New Patch', new_post_path, class: "button"%>
-                    <%= link_to 'Random Patch', post_path(@random_post), class: "button"%>
                     <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
                     <% else %>
                     <%= link_to 'Sign In', new_user_session_path %>
