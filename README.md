@@ -3,6 +3,10 @@
 ## Overview
 Patch is a social community to cultivate ideas and explore design. Users can upload their own content, explore other users posts, and categorize their favorite items via likes / comments. Site influences include Dribbble, Pinterest, and Reddit.
 
+* Users can sign-in / sign-out
+* Users can create posts
+* Posts have comments, images, voting
+
 ## Technology Stack
 * Ruby on Rails
 * CSS / SASS
