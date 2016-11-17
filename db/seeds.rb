@@ -1,4 +1,11 @@
 #USERS
+
+admin = User.new
+admin.name = 'admin'
+admin.email = 'admin@email.com'
+admin.password = 'Password'
+admin.save!
+
 rob = User.new
 rob.name = 'MediumRob'
 rob.email = 'robertromaniw@gmail.com'

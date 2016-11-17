@@ -1,24 +1,21 @@
-# README
+# Patch
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+Patch is a social community to cultivate ideas and explore design. Users can upload their own content, explore other users posts, and categorize their favorite items via likes / comments. Site influences include Dribbble, Pinterest, and Reddit.
 
-Things you may want to cover:
+## Technology Stack
+* Ruby on Rails
+* CSS / SASS
+* Bootstrap
+* Postgres
 
-* Ruby version
+## Installation instructions
+* Clone down repo
+* Create the database and run the database migrations
+* Seed the database with the included Seeds.rb
 
-* System dependencies
+## Test User Info
+* **email:** admin@email.com
+* **password:** Password
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Additional Info in planning folder
