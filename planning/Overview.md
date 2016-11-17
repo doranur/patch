@@ -15,3 +15,10 @@ Users can upload their own content, explore other users posts, and categorize th
 * **acts_as_votable:** https://rubygems.org/gems/acts_as_votable/versions/0.10.0
 
 Refer to gem documentation for installation instructions
+
+## Future Feature Adds
+* Users can see their posts / likes on their account page
+* Home page can be sorted by post date, # of likes, # of comments, etc (Similar to Reddit options)
+* Devise admin functionality
+* Avatar pictures for Users
+* Style Forms
