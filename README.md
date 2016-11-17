@@ -10,7 +10,6 @@ Patch is a social community to cultivate ideas and explore design. Users can upl
 ## Technology Stack
 * Ruby on Rails
 * CSS / SASS
-* Bootstrap
 * Postgres
 
 ## Installation instructions
