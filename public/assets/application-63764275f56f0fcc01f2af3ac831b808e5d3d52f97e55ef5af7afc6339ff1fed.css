@@ -1,0 +1,298 @@
+/* line 1, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.open-box {
+  display: none;
+}
+
+/* line 5, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* line 10, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+/* line 16, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* line 20, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 25, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.yield {
+  width: 80%;
+  padding-top: 6rem;
+  margin-left: 7rem;
+}
+
+/* line 31, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 36, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 40, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.button {
+  border: 1px solid black;
+  padding: .7rem 1.25rem;
+  border-radius: .3rem;
+  outline: none;
+  background: white;
+  color: black;
+}
+
+/* line 49, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.button:hover {
+  background-color: #50A7C7;
+  color: white;
+}
+
+/* line 55, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.horizontal {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+/* line 59, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header {
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("wet_snow");
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid black;
+}
+/* line 75, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header #logo {
+  float: left;
+  font-size: 1.75rem;
+}
+/* line 78, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header #logo a {
+  color: black;
+  text-decoration: none;
+}
+/* line 81, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header #logo a:hover {
+  color: #50A7C7;
+}
+/* line 86, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header nav {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+}
+/* line 90, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header nav a {
+  margin-left: 1.5rem;
+  line-height: 2;
+  color: black;
+  text-decoration: none;
+}
+/* line 95, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+header nav a:hover {
+  color: #50A7C7;
+}
+
+/* line 102, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/application.css.scss */
+.notice, .alert {
+  color: #50A7C7;
+}
+
+/* line 2, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post {
+  background: #F8F9FA;
+  width: 30%;
+  float: left;
+  margin: 1rem 1.5%;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 10, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 14, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image img {
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+/* line 21, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: 0.5rem 2%;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 28, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 32, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 38, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data {
+  padding: 0.75rem 5%;
+  color: #969696;
+}
+/* line 42, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons,
+#posts .post .post_content .data .username {
+  margin: 0;
+  font-size: 0.8rem;
+}
+/* line 48, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username {
+  float: left;
+}
+/* line 52, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons {
+  float: right;
+}
+/* line 55, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons span {
+  margin-left: 0.5rem;
+}
+
+/* line 1, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+.linky a {
+  color: black;
+}
+
+/* line 5, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show {
+  margin-top: -20px;
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem;
+}
+/* line 11, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_image_description {
+  width: 60%;
+  float: left;
+  margin-right: 5%;
+  font-size: 10px;
+}
+/* line 19, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data {
+  margin-left: 3rem;
+  width: 25%;
+  float: left;
+}
+/* line 24, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .button {
+  margin-top: 20px;
+  width: 100%;
+  display: inline-block;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #969696;
+}
+/* line 34, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .button:hover {
+  color: white;
+  border: 1px solid black;
+}
+/* line 40, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .data {
+  margin-top: 300px;
+  width: 100%;
+  display: block;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  text-decoration: none;
+  color: #969696;
+  margin: 0;
+}
+/* line 52, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show h1 {
+  margin: 0;
+  color: #333233;
+}
+/* line 57, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+/* line 62, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .username {
+  color: #969696;
+  margin: 0 0 1.5rem;
+}
+/* line 67, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+#post_show .description {
+  margin: -.4rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #969696;
+}
+
+/* line 75, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/posts.css.scss */
+.horizontal {
+  margin-top: 1rem;
+}
+
+/* line 1, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/about.css.scss */
+.aboutL {
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* line 7, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/about.css.scss */
+.bluey {
+  color: #50A7C7;
+  font-weight: bold;
+}
+
+/* line 12, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/about.css.scss */
+.aboutT {
+  height: auto;
+  text-align: center;
+  color: RGBA(132, 132, 132, 1);
+  font-size: 40px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+/* line 24, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/about.css.scss */
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 29, /Users/Mamba/wdi/projects/patch/patch/app/assets/stylesheets/about.css.scss */
+.aboutI {
+  display: flex;
+  align-content: center;
+  height: 150px;
+  margin-top: 45px;
+}
